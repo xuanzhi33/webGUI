@@ -20,5 +20,8 @@ setup(
     license="GPL-3.0",
     install_requires=["Flask", "SimpleWebSocketServer"],
     packages=find_packages(),
-    python_requires=">=3.6"
+    python_requires=">=3.6",
+    package_data={
+        "webGUI": ["templates/*.html", "static/*.css", "static/*.js"]
+    }
 )
